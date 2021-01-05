@@ -28,6 +28,8 @@ const APP_SHELL_INMUTABLE = [
 
 self.addEventListener('install', e => {
 
+    console.log('cambio');
+
     const cacheStatic = caches.open(STATIC_CACHE)
         .then(cache => {
             return cache.addAll(APP_SHELL)
